@@ -28,8 +28,9 @@ def saving_csv(df, caminho="data/pokemons.csv"):
 
 
 if __name__ == "__main__":
+    number = int(input("number of Pokémon searched: "))
     print("starting")
-    df = pegar_pokemon(20)
+    df = pegar_pokemon(number)
 
     print("clean datas")
     df_clean = clear_data(df)
